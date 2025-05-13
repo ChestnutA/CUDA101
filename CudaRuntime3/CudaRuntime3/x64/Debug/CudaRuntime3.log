@@ -1,0 +1,31 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  C:\Users\Chestnut\source\repos\CudaRuntime3\CudaRuntime3>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include"  -G   --keep-dir x64\Debug  -maxrregcount=0    --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc143.pdb" -o C:\Users\Chestnut\source\repos\CudaRuntime3\CudaRuntime3\x64\Debug\kernel.cu.obj "C:\Users\Chestnut\source\repos\CudaRuntime3\CudaRuntime3\kernel.cu" 
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include\cub/warp/specializations/warp_exchange_shfl.cuh(1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include\cub/warp/specializations/warp_exchange_shfl.cuh(1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include\thrust/detail/config/cpp_dialect.h:117: warning: Thrust requires at least C++ 17.C++ 14 is deprecated but still supported.C++ 14 support will be removed in a future release.Define THRUST_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include\cub/util_cpp_dialect.cuh:129: warning: CUB requires at least C++ 17.C++ 14 is deprecated but still supported.C++ 14 support will be removed in a future release.Define CUB_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+C:\Users\Chestnut\source\repos\CudaRuntime3\CudaRuntime3\kernel.cu(122): warning #177-D: variable "tileInBlock" was declared but never referenced
+    	const int tileInBlock = tid / TILE_SIZE;
+    	          ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include\thrust/system/cuda/detail/get_value.h(70): warning #20011-D: calling a __host__ function("std::_Iterator_base12::_Iterator_base12(const ::std::_Iterator_base12&)") from a __host__ __device__ function("std::_Iterator_base12::_Iterator_base12 [subobject]") is not allowed
+  
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include\thrust/system/cuda/detail/get_value.h(70): warning #20011-D: calling a __host__ function("std::_Iterator_base12::~_Iterator_base12()") from a __host__ __device__ function("std::_Iterator_base12::~_Iterator_base12 [subobject]") is not allowed
+  
+CUDACOMPILE : nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+  kernel.cu
+  tmpxft_0000fc14_00000000-7_kernel.cudafe1.cpp
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include\thrust/detail/config/cpp_dialect.h:117: warning: Thrust requires at least C++ 17.C++ 14 is deprecated but still supported.C++ 14 support will be removed in a future release.Define THRUST_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8\include\cub/util_cpp_dialect.cuh:129: warning: CUB requires at least C++ 17.C++ 14 is deprecated but still supported.C++ 14 support will be removed in a future release.Define CUB_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+C:\Users\Chestnut\source\repos\CudaRuntime3\CudaRuntime3\kernel.cu(38): warning C4244: “参数”: 从“double”转换到“_Ty”，可能丢失数据
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\Chestnut\source\repos\CudaRuntime3\CudaRuntime3\kernel.cu(210): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\Chestnut\source\repos\CudaRuntime3\CudaRuntime3\kernel.cu(225): warning C4244: “参数”: 从“float”转换到“unsigned int”，可能丢失数据
+C:\Users\Chestnut\source\repos\CudaRuntime3\CudaRuntime3\kernel.cu(286): warning C4244: “参数”: 从“float”转换到“unsigned int”，可能丢失数据
+  CudaRuntime3.vcxproj -> C:\Users\Chestnut\source\repos\CudaRuntime3\x64\Debug\CudaRuntime3.exe
